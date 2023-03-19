@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="container">
+        <div class="header">
+            <h1>Password Generator</h1>
+        </div>
+        <div class="setLength">
+            <h2>Set The Length</h2>
+        </div>
+        <div class="adjust">
+            <input type="number" name="num" id="num1">
+            <input type="range" name="range1" id="range2" min="8" max="20">
+        </div>
+        <div class="get">
+            <button class="getPassword" onclick="generate()">Get Password</button>
+        </div>
+        <div class="password1">
+            <h2>Password: </h2>
+            <input type="text" name="text1" id="write">
+        </div>
+        <div class="checkStrength">
+            <h2>Password Strength: </h2>
+            <input type="text" name="text2" id="check" disabled>
+        </div>
+        <div>
+            <p class="display"></p>
+        </div>
+        <div class="clear">
+            <button id="reset" onclick="clearAll()">Clear</button>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
