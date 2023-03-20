@@ -1,6 +1,7 @@
 let grabSelector=document.querySelector("#range2")
 
 grabSelector.addEventListener("mousemove",setValue)
+grabSelector.addEventListener("touchmove",setValue)
 
 function setValue()
 {
